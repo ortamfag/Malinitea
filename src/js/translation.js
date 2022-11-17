@@ -1,20 +1,192 @@
 import i18next from 'https://cdn.jsdelivr.net/gh/i18next/i18next/src/index.js'
 
-//en
-import translationEn from '../locales/en/translation.json' assert { type: "json" };
+let translationEn = {
+    "title": "FULL PACKAGING OF BRANDS - FROM THE LOGO TO THE WEBSITE",
+    "title2": "Freelance portfolio site",
+    "title3": "Send a message",
+    "title4": "Portfolio",
+    "title5": "Shop",
+    "title6": "Course",
+    "title7": "My name is Lera, nice to meet you",
 
-//ru
-import translationRu from '../locales/ru/translation.json' assert { type: "json" };
+    "title8": "Turnkey projects",
+    "title9": "Services",
+    "title10": "Brand design",
+    "title11": "Development of logos and printed products ",
+    "title12": "any kind (business cards, certificates, leaflets, booklets, menus, catalogs, labels, brand books, invitations); design ",
+    "title13": "outdoor advertising; ",
+    "title14": "decor ",
+    "title15": "packages, merch",
+    "title16": "Web",
+    "title17": "Development of landings, multi-page sites, online stores ",
+    "title18": "under the key with 0 or on the constructor. In cases where individual solutions are required (not a constructor) ",
+    "title19": "I work with a developer",
+
+    "title20": "-10% for any service",
+    "title21": "I know how difficult it can be to decide to work with a freelancer whom you see for the first time. Therefore, I am happy to give you a discount on your order and invite you to my Instagram",
+    "title22": "Make an order",
+
+    "title23": "Popular Services",
+    "title24": "Examples and prices",
+    "title25": "Logo development",
+    "title26": "from 500€",
+    "title27": "Social media design",
+    "title28": "from 400€",
+    "title29": "Branding",
+    "title30": "from 1.300€",
+    "title31": "Brandbook",
+    "title32": "from 1.600€",
+    "title33": "Website development",
+    "title34": "from 1.600€",
+    "title35": "Magazines & Manuals",
+    "title36": "from 1.000€",
+    "title37": "Package design",
+    "title38": "from 350€",
+
+    "title39": "Your project will be even better",
+    "title40": "Portfolio",
+    "title41": "Cases by category",
+    "title42": "Brandbooks",
+    "title43": "Websites",
+    "title44": "Branding",
+    "title45": "Logos",
+    "title46": "Presentations",
+    "title47": "Polygraphy",
+    "title48": "Signboards",
+    "title49": "Social networks",
+    "title50": "Illustrations",
+    "title51": "Manuals",
+    "title52": "Package",
+    "title53": "Magazines",
+    "title54": "Advertising",
+    "title55": "Merch",
+    "title56": "Cosmetics",
+    "title57": "Ceramics",
+    "title58": "Real estate",
+    "title59": "Technique",
+    "title60": "Beauty",
+    "title61": "Education",
+    "title62": "Food",
+    "title63": "Clothes",
+    "title64": "Tarot and astrology",
+    "title65": "Experts",
+    "title66": "Tobacco",
+
+    "title67": "Good evening! First of all, I want to thank you for your work! All options are very beautiful! It's hard to even decide on one.",
+    "title68": "Very beautiful and good quality indeed! In our company, usually 5-6 people were responsible for such presentations.",
+
+    "title69": "Contact me",
+    "title70": "If you still have questions, or what you want to order is not on the site, just click on the button below and send a message. We will deal with the request on an individual basis and find a solution :)",
+
+    "title71": "Don't want to wait?",
+    "title72": "Check out the template store",
+    "title73": "Online Store",
+    "title74": "Invitations, certificates, business cards, sets & more at an affordable price",
+
+    "title75": "Portfolio",
+    "title76": "Shop",
+    "title77": "Course"
+}
+
+let translationRu = {
+    "title": "ПОЛНАЯ УПАКОВКА БРЕНДОВ - ОТ ЛОГОТИПА ДО САЙТА",
+    "title2": "Сайт-портфолио фрилансера",
+    "title3": "Оставить заявку",
+    "title4": "Портфолио",
+    "title5": "Магазин",
+    "title6": "Курс",
+    "title7": "Меня зовут Лера, рада познакомиться",
+
+    "title8": "Дизайн под ключ",
+    "title9": "Виды работ",
+    "title10": "Бренд-дизайн",
+    "title11": "Разработка логотипов и печатной продукции ",
+    "title12": "любого вида (визиток, сертификатов, листовок, буклетов, меню, каталогов, этикеток, брендбуков, приглашений); дизайн ",
+    "title13": "наружной рекламы; ",
+    "title14": "оформление ",
+    "title15": "упаковок, мерча",
+    "title16": "Веб",
+    "title17": "Разработка лендингов, многостраничных сайтов, интернет-магазинов ",
+    "title18": "под ключ с 0 или на конструкторе. В случаях, когда требуются индивидуальные решения (не конструктор) ",
+    "title19": "работаю в паре с разработчиком",
+
+    "title20": "-10% на любую услугу",
+    "title21": "Я знаю, как сложно бывает решиться на сотрудничество с фрилансером, которого вы видите впервые. Поэтому с радостью дарю Вам скидку на заказ и приглашаю в свой Инстаграм",
+    "title22": "Заказать дизайн",
+
+    "title23": "Популярные услуги",
+    "title24": "Примеры и цены",
+    "title25": "Разработка логотипа",
+    "title26": "от 30.000Р",
+    "title27": "Дизайн соц.сетей",
+    "title28": "от 25.000Р",
+    "title29": "Фирменный стиль",
+    "title30": "от 80.000Р",
+    "title31": "Брендбук",
+    "title32": "от 100.000Р",
+    "title33": "Разработка сайта",
+    "title34": "от 100.000Р",
+    "title35": "Многостраничники",
+    "title36": "от 60.000Р",
+    "title37": "Дизайн упаковки",
+    "title38": "от 20.000Р",
+
+    "title39": "Ваш проект будет еще лучше",
+    "title40": "Портфолио",
+    "title41": "Кейсы по категориям",
+    "title42": "Брендбуки",
+    "title43": "Сайты и ИМ",
+    "title44": "Брендинг",
+    "title45": "Логотипы",
+    "title46": "Презентации",
+    "title47": "Полиграфия",
+    "title48": "Вывески",
+    "title49": "Соц.сети",
+    "title50": "Иллюстрации",
+    "title51": "Пособия",
+    "title52": "Упаковка",
+    "title53": "Каталоги",
+    "title54": "Реклама",
+    "title55": "Мерч",
+    "title56": "Косметика",
+    "title57": "Керамика",
+    "title58": "Недвижимость",
+    "title59": "Техника",
+    "title60": "Бьюти",
+    "title61": "Образование",
+    "title62": "Продукты питания",
+    "title63": "Одежда",
+    "title64": "Таро и астрология",
+    "title65": "Эксперты",
+    "title66": "Табак",
+
+    "title67": "Добрый вечер! В первую очередь хочу поблагодарить за вашу работу! Все варианты очень красивые!!! Даже сложно определиться с одним.",
+    "title68": "Очень красиво и качественно правда! У нас в компании за такие презентации обычно отвественные были по 5-6 человек.",
+
+    "title69": "Свяжитесь со мной",
+    "title70": "Если у вас остались вопросы, или того, что вы хотите заказать, нет на сайте, просто нажмите на кнопку ниже и напишите мне. Разберем запрос в индивидуальном порядке и найдем решение :)",
+
+    "title71": "Не хотите ждать?",
+    "title72": "Загляните в магазин готовых шаблонов",
+    "title73": "В магазин",
+    "title74": "Приглашения, сертификаты, визитки, наборы и многое другое по доступной цене",
+
+    "title75": "Портфолио",
+    "title76": "Магазин",
+    "title77": "Курс"
+}
 
 const resources = {
     en: {
-        translation: translationEn
+        translation: translationEn 
     },
 
     ru: {
         translation: translationRu
     }
 }
+
+console.log(translationEn.title)
 
 i18next.init({
     resources
@@ -198,6 +370,12 @@ function changeToRu() {
     document.getElementById('output77').innerHTML = i18next.t(translationRu.title77)
 
 }
+
+const lang = navigator.language || navigator.userLanguage; 
+console.log(lang)
+// window.addEventListener('DOMContentLoaded', function SelectLang() {
+//     if ((lang != 'ru-RU') || (lang != 'kk') || (lang != 'uk') ||)
+// })
 
 
 document.getElementById('ru').addEventListener('click', () => changeToRu())
