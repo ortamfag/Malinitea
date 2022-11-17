@@ -247,6 +247,7 @@
    font-size: 13px;
    line-height: 16px;
    color: #7C7C7C;
+   width: 270px;
 }
 
 
@@ -846,8 +847,8 @@
    font-family: 'Open Sans';
    font-size: 16px;
    color: #11100E;
-   margin-top: 24px;
-   margin-bottom: 46px;
+   margin: 24px auto 46px auto;
+   width: 68%;
 }
 
 .contacts__button-1 {
