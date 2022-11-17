@@ -33,6 +33,10 @@
    src: url('src/fonts/CormorantInfant-Light.woff2') format('woff2'), url('src/fonts/CormorantInfant-Light.woff') format('woff'), url('src/fonts/CormorantInfant-Light.ttf') format('truetype');
 }
 
+a {
+   text-decoration: none;
+}
+
 
 /* Экран 1 */
 
@@ -203,6 +207,7 @@
    position: absolute;
    left: -10px;
    top: 25px;
+   transition: 0.3s;
 }
 
 .nav__items p {

@@ -186,13 +186,13 @@ const resources = {
     }
 }
 
-console.log(translationEn.title)
-
 i18next.init({
     resources
 });
 
 function changeToEng() {
+    lang = 'eng'
+
     document.getElementById('output').innerHTML = i18next.t(translationEn.title)
     document.getElementById('output2').innerHTML = i18next.t(translationEn.title2)
     document.getElementById('output3').innerHTML = i18next.t(translationEn.title3)
@@ -283,6 +283,8 @@ function changeToEng() {
 }
 
 function changeToRu() {
+    lang = 'rus'
+    
     document.getElementById('output').innerHTML = i18next.t(translationRu.title)
     document.getElementById('output2').innerHTML = i18next.t(translationRu.title2)
     document.getElementById('output3').innerHTML = i18next.t(translationRu.title3)
@@ -370,13 +372,6 @@ function changeToRu() {
     document.getElementById('output77').innerHTML = i18next.t(translationRu.title77)
 
 }
-
-const lang = navigator.language || navigator.userLanguage; 
-console.log(lang)
-// window.addEventListener('DOMContentLoaded', function SelectLang() {
-//     if ((lang != 'ru-RU') || (lang != 'kk') || (lang != 'uk') ||)
-// })
-
 
 document.getElementById('ru').addEventListener('click', () => changeToRu())
 document.getElementById('en').addEventListener('click', () => changeToEng())

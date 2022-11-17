@@ -1,3 +1,15 @@
+let page = document.title
+console.log(page)
+let lang = navigator.language || navigator.userLanguage;
+window.addEventListener('DOMContentLoaded', () => {
+    if ((lang === 'ru-RU') || (lang === 'kk') || (lang === 'uk') || (lang === 'ru')) {
+        lang = 'rus'
+    } else {
+        lang = 'eng'
+        changeToEng()
+    }
+})
+
 //Cлайдер с мальчиком
 
 const images = document.querySelectorAll('.slider .slider-line .slider__item');
@@ -145,50 +157,113 @@ const navItems = document.querySelectorAll('.nav__items p')
 
 for (const navItem of navItems) {
     navItem.addEventListener('mouseover', () => {
-        switch (navItem.innerHTML) {
-            case 'Портфолио':
-                navSvg.style.width = "106px"
-                karakul1Block.style.left = "-10px"
-                karakul1.classList.add('tpFKIcRS_0')
-                break
 
-            case 'Магазин':
-                navSvg.style.width = "106px"
-                karakul1Block.style.left = "100px"
-                karakul1.classList.add('tpFKIcRS_0')
-                break
-
-            case 'NFT':
-                navSvg.style.width = "85px"
-                karakul1Block.style.left = "192px"
-                karakul1.classList.add('tpFKIcRS_0')
-                break
-
-            case 'Курс':
-                navSvg.style.width = "85px"
-                karakul1Block.style.left = "260px"
-                karakul1.classList.add('tpFKIcRS_0')
-                break
+        if (lang === 'rus') {
+            switch (navItem.innerHTML) {
+                case 'Портфолио':
+                    navSvg.style.width = "106px"
+                    karakul1Block.style.left = "-10px"
+                    karakul1.classList.add('tpFKIcRS_0')
+                    break
+    
+                case 'Магазин':
+                    navSvg.style.width = "106px"
+                    karakul1Block.style.left = "100px"
+                    karakul1.classList.add('tpFKIcRS_0')
+                    break
+    
+                case 'NFT':
+                    navSvg.style.width = "85px"
+                    karakul1Block.style.left = "192px"
+                    karakul1.classList.add('tpFKIcRS_0')
+                    break
+    
+                case 'Курс':
+                    navSvg.style.width = "85px"
+                    karakul1Block.style.left = "260px"
+                    karakul1.classList.add('tpFKIcRS_0')
+                    break
+            }
+        } else {
+            switch (navItem.innerHTML) {
+                case 'Portfolio':
+                    navSvg.style.width = "85px"
+                    karakul1Block.style.left = "-10px"
+                    karakul1.classList.add('tpFKIcRS_0')
+                    break
+    
+                case 'Shop':
+                    navSvg.style.width = "80px"
+                    karakul1Block.style.left = "80px"
+                    karakul1.classList.add('tpFKIcRS_0')
+                    break
+    
+                case 'NFT':
+                    navSvg.style.width = "85px"
+                    karakul1Block.style.left = "140px"
+                    karakul1.classList.add('tpFKIcRS_0')
+                    break
+    
+                case 'Course':
+                    navSvg.style.width = "85px"
+                    karakul1Block.style.left = "215px"
+                    karakul1.classList.add('tpFKIcRS_0')
+                    break
+            }
         }
     })
 
     navItem.addEventListener('mouseout', () => {
-        switch (navItem.innerHTML) {
-            case 'Портфолио':
-                karakul1.classList.remove('tpFKIcRS_0')
-                break
+        if (lang === 'rus') {
+            switch (navItem.innerHTML) {
+                case 'Портфолио':
+                    karakul1.classList.remove('tpFKIcRS_0')
+                    break
 
-            case 'Магазин':
-                karakul1.classList.remove('tpFKIcRS_0')
-                break
+                case 'Магазин':
+                    karakul1.classList.remove('tpFKIcRS_0')
+                    break
 
-            case 'NFT':
-                karakul1.classList.remove('tpFKIcRS_0')
-                break
+                case 'NFT':
+                    karakul1.classList.remove('tpFKIcRS_0')
+                    break
 
-            case 'Курс':
-                karakul1.classList.remove('tpFKIcRS_0')
-                break
+                case 'Курс':
+                    karakul1.classList.remove('tpFKIcRS_0')
+                    break
+            }
+
+            switch(document.title) {
+                case 'Malinitea':
+                    navSvg.style.width = "106px"
+                    karakul1Block.style.left = "-10px"
+                    break
+            }
+        } else {
+            switch (navItem.innerHTML) {
+                case 'Portfolio':
+                    karakul1.classList.remove('tpFKIcRS_0')
+                    break
+
+                case 'Shop':
+                    karakul1.classList.remove('tpFKIcRS_0')
+                    break
+
+                case 'NFT':
+                    karakul1.classList.remove('tpFKIcRS_0')
+                    break
+
+                case 'Course':
+                    karakul1.classList.remove('tpFKIcRS_0')
+                    break
+            }
+
+            switch(document.title) {
+                case 'Malinitea': 
+                    navSvg.style.width = "85px"
+                    karakul1Block.style.left = "-10px"
+                    break
+            }
         }
     })
 }
