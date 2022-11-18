@@ -396,7 +396,6 @@ a {
 .directions__text {
    display: flex;
    width: 100%;
-   justify-content: space-between;
    align-items: center;
    padding: 100px 0 64px 0;
 }
@@ -406,6 +405,7 @@ a {
    font-size: 36px;
    color: white;
    text-transform: uppercase;
+   margin-right: 10px;
 }
 
 .directions__text h4 {
@@ -413,6 +413,7 @@ a {
    font-size: 14px;
    color: #9CA5F2;
    line-height: 36px;
+   margin-left: 10px;
 }
 
 .directions__cards {
@@ -1327,6 +1328,14 @@ a {
 
    .directions__line {
       width: 100%;
+   }
+
+   .directions__text h2{
+      margin-right: 0px !important;
+   }
+
+   .directions__text h4{
+      margin-left: 0px;
    }
 }
 
