@@ -1,5 +1,5 @@
 let page = document.title
-console.log(page)
+
 let lang = navigator.language || navigator.userLanguage;
 window.addEventListener('DOMContentLoaded', () => {
     if ((lang === 'ru-RU') || (lang === 'kk') || (lang === 'uk') || (lang === 'ru')) {
@@ -259,7 +259,7 @@ for (const navItem of navItems) {
             }
 
             switch(document.title) {
-                case 'Malinitea': 
+                case 'Portfolio': 
                     navSvg.style.width = "85px"
                     karakul1Block.style.left = "-10px"
                     break
