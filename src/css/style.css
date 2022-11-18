@@ -1392,3 +1392,28 @@ a {
       display: none;
    }
 }
+
+@media (max-width: 768px) {
+   .price-line{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-gap: 12px;
+      width: 100% !important;
+   }
+
+   .price__item{
+      width: 100% !important;
+   }
+
+   .price__item h3{
+      margin-top: 5px;
+   }
+
+   .price__bg{
+      padding: 100px 0 100px 6%;
+   }
+
+   .price__buttons{
+      display: none;
+   }
+}
