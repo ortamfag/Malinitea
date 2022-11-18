@@ -269,6 +269,65 @@ a {
    width: 270px;
 }
 
+.nav__burger{
+   display: none;
+   cursor: pointer;
+   z-index: 999;
+   /* чтобы не было синего фона при нажатии */
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+}
+
+.nav__burger div{
+   width: 45px;
+   height: 2px;
+   background-color: #fff;
+   margin-bottom: 10px;
+   transition: 0.3s;
+}
+
+.nav__burger-active div:nth-child(1){
+   transform: translateY(16px) rotate(45deg);
+}
+
+.nav__burger-active div:nth-child(2){
+   opacity: 0;
+}
+
+.nav__burger-active div:nth-child(3) {
+   transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav__sidebar{
+   width: auto;
+   height: 100%;
+   padding: 75px 30px;
+   transition: transform 0.5s ease;
+   transform: translate(-100%);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 999;
+   background-color: #414F8E;
+}
+
+.nav__sidebar-active{
+   transform: translate(0%);
+}
+
+.nav__sidebar-list{
+   display: flex;
+   flex-direction: column;
+}
+
+.nav__sidebar-list a {
+   font-family: 'Open Sans';
+   font-size: 18px;
+   color: white;
+   margin-bottom: 15px;
+}
 
 .header__wrapper {
    display: flex;
@@ -1341,7 +1400,8 @@ a {
 
 @media (max-width: 1220px) {
    .logo {
-      margin-right: 20px;
+      margin-right: 40px;
+      z-index: 1000;
    }
 
    .nav__name {
@@ -1351,6 +1411,20 @@ a {
    .header__text h1 {
       width: 590px;
       font-size: 48px;
+   }
+
+   .nav{
+      justify-content: left;
+   }
+
+   .nav__burger{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .nav__items{
+      display: none;
    }
 }
 

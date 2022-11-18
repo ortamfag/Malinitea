@@ -197,8 +197,11 @@ function changeToEng() {
     document.getElementById('output2').innerHTML = i18next.t(translationEn.title2)
     document.getElementById('output3').innerHTML = i18next.t(translationEn.title3)
     document.getElementById('output4').innerHTML = i18next.t(translationEn.title4)
+    document.getElementById('output4-1').innerHTML = i18next.t(translationEn.title4)
     document.getElementById('output5').innerHTML = i18next.t(translationEn.title5)
+    document.getElementById('output5-1').innerHTML = i18next.t(translationEn.title5)
     document.getElementById('output6').innerHTML = i18next.t(translationEn.title6)
+    document.getElementById('output6-1').innerHTML = i18next.t(translationEn.title6)
     document.getElementById('output7').innerHTML = i18next.t(translationEn.title7)
 
     document.getElementById('output8').innerHTML = i18next.t(translationEn.title8)
@@ -289,8 +292,11 @@ function changeToRu() {
     document.getElementById('output2').innerHTML = i18next.t(translationRu.title2)
     document.getElementById('output3').innerHTML = i18next.t(translationRu.title3)
     document.getElementById('output4').innerHTML = i18next.t(translationRu.title4)
+    document.getElementById('output4-1').innerHTML = i18next.t(translationRu.title4)
     document.getElementById('output5').innerHTML = i18next.t(translationRu.title5)
+    document.getElementById('output5-1').innerHTML = i18next.t(translationRu.title5)
     document.getElementById('output6').innerHTML = i18next.t(translationRu.title6)
+    document.getElementById('output6-1').innerHTML = i18next.t(translationRu.title6)
     document.getElementById('output7').innerHTML = i18next.t(translationRu.title7)
 
     document.getElementById('output8').innerHTML = i18next.t(translationRu.title8)

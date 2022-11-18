@@ -357,3 +357,11 @@ let elements = document.querySelectorAll('.element-animation');
 for (let elm of elements) {
     observer4.observe(elm);
 }
+
+//бургер
+const burger = document.querySelector("#burger")
+const sidebar = document.querySelector("#sidebar")
+
+
+burger.addEventListener('click', () => burger.classList.toggle('nav__burger-active'))
+burger.addEventListener('click', () => sidebar.classList.toggle('nav__sidebar-active'))
