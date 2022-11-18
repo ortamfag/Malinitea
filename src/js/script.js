@@ -1,14 +1,6 @@
 let page = document.title
 
 let lang = navigator.language || navigator.userLanguage;
-window.addEventListener('DOMContentLoaded', () => {
-    if ((lang === 'ru-RU') || (lang === 'kk') || (lang === 'uk') || (lang === 'ru')) {
-        lang = 'rus'
-    } else {
-        lang = 'eng'
-        changeToEng()
-    }
-})
 
 //Cлайдер с мальчиком
 
@@ -348,3 +340,20 @@ makeModal('#clothes')
 makeModal('#tarot')
 makeModal('#experts')
 makeModal('#tobacco')
+
+//появление блоков
+
+function onEntry(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting) {
+        change.target.classList.add('element-show');
+      }
+    });
+}
+
+let options = { threshold: [0.5] };
+let observer4 = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+for (let elm of elements) {
+    observer4.observe(elm);
+}

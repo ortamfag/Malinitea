@@ -375,3 +375,12 @@ function changeToRu() {
 
 document.getElementById('ru').addEventListener('click', () => changeToRu())
 document.getElementById('en').addEventListener('click', () => changeToEng())
+
+window.addEventListener('DOMContentLoaded', () => {
+    if ((lang === 'ru-RU') || (lang === 'kk') || (lang === 'uk') || (lang === 'ru')) {
+        lang = 'rus'
+    } else {
+        lang = 'eng'
+        changeToEng()
+    }
+})
